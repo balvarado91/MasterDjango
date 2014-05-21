@@ -8,18 +8,18 @@ from clientes.models import Cliente
 
 class Venta(models.Model):
 
-id=models.AutoField(primary_key=True)
+	id=models.AutoField(primary_key=True)
 
-factura=models.IntegerField()
+	factura=models.IntegerField()
 
-fecha=models.DateTimeField(auto_now=False, auto_now_add=False)
+	fecha=models.DateTimeField(auto_now=False, auto_now_add=False)
 
-cliente=models.ForeignKey(Cliente)
+	cliente=models.ForeignKey(Cliente)
 
-productos=models.ManyToManyField(Producto)
+	productos=models.ManyToManyField(Producto)
 
 
 
-def __unicode__(self):
+	def __unicode__(self):
 
-return self.factura
+	   return self.factura

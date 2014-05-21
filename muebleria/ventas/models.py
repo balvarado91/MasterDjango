@@ -22,4 +22,4 @@ class Venta(models.Model):
 
 	def __unicode__(self):
 
-	   return self.factura
+	   return unicode(self.factura)
