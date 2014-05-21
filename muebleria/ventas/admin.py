@@ -1,0 +1,8 @@
+from ventas.models import Venta
+
+from django.contrib import admin
+
+admin.site.register(Venta)
+
+
+
